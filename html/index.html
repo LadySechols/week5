@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="/js/index.js"></script>
+    <title>wk 5</title>
+    <!-- <script src="/js/index.js"></script> -->
+
+    <script>
+        function clickHandler() {
+            alert('hello. you clicked me');
+            return true;
+        }
+        function mouseOver() {
+            document.getElementById('eventlog').innerHTML = 'mouse out';
+        }
+        function mouseOut() {
+            document.getElementById('eventlog').innerHTML = 'mouse over';
+        }
+    </script>
 </head>
-<body>
-    <h1>Debugging and Playing with DOM</h1>
+<body >
+    <!-- <h1>Debugging and Playing with DOM</h1> -->
+    <h1 onclick="clickHandler();" onmouseover="mouseOver();" onmouseout="mouseOut();" >JS Events</h1>
+    
+    <button onclick="alert('clicked'); alert('click again');"> Click Me</button>
+
+
 </body>
 </html>
